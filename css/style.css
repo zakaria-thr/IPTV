@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(var(--pixel) * 1400);
+}
+/*=========== custom property ==============*/
+:root{
+    --pixel : 0.065vw;
+    --primary : #ffb302 ;
+    --secondary : #0c1020 ;
+    --light-gray : #E1E6EE;
+    --gray : #757f95;
+
+    --transition : 0.3s all ease;
+}
+/*
+**other
+*/
+a{
+    text-decoration: none;
+    color: inherit;
+    width: fit-content;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+.d-flex{
+    display: flex;
+}
+.fd-colums{
+    flex-direction: column;
+}
+.js-center{
+    justify-content: center;
+}
+.js-between{
+    justify-content: space-between;
+}
+.al-center{
+    align-items: center;
+}
+.gap-20{
+    gap: calc(var(--pixel) * 20) ;
+}
+.gap-10{
+    gap: calc(var(--pixel) * 10) ;
+}
+.gap-30{
+    gap: calc(var(--pixel) * 30) ;
+}
