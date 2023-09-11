@@ -63,3 +63,135 @@ button{
 .gap-30{
     gap: calc(var(--pixel) * 30) ;
 }
+/* button */
+.btn{
+    padding: 5px 15px;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    cursor: pointer;
+    transition: color 1s;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: calc(var(--pixel) * -20);
+    z-index: -1;
+    width: 150%;
+    height: 110%;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: bottom;
+    transition: transform 0.7s;
+    background-color: var(--primary);
+}
+.btn:hover::before{
+    transform: scaleX(1) skewX(35deg);
+}
+/*=========== header ==============*/
+.header .top-nav{
+    color: var(--gray);
+    padding: calc(var(--pixel) * 10) 0 ;
+    font-size: calc(var(--pixel) * 15);
+    line-height:calc(var(--pixel) * 22);
+    font-weight: 700;
+    border-bottom: 1px solid var(--light-gray);
+}
+.header .top-nav .time-email::after{
+    position: relative;
+}
+.header .top-nav .time-email .time-work::after,
+.header .top-nav .time-email .email::after{
+    content: '|';
+    color: var(--gray);
+    margin-left: calc(var(--pixel) * 25);
+}
+.header .top-nav .clock,
+.header .top-nav .mail,
+.header .top-nav .phone{
+    color: var(--primary);
+    margin-right: calc(var(--pixel) * 8) ;
+}
+.header .top-nav .social-media > * >*{
+    font-size: calc(var(--pixel) * 20);
+    transition: var(--transition);
+}
+.header .top-nav .social-media a i:hover{
+    color: var(--primary);
+}
+.header .nav{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: calc(var(--pixel) * 20) 0;
+}
+.header .nav .menu{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    gap: calc(var(--pixel) * 30);
+    font-size: calc(var(--pixel) * 18);
+    line-height: calc(var(--pixel) * 22);
+    font-weight: 700;
+    color: var(--gray);
+    text-transform: capitalize;
+}
+.header .nav .menu li{
+    transition: .3s all ease;
+    position: relative;
+}
+.header .nav .menu a{
+    padding-bottom: calc(var(--pixel) * 10);
+    position: relative;
+}
+.header .nav .menu a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: calc(var(--pixel) * 2);
+    background-color: var(--primary);
+    bottom: 0;
+    left: 0;
+    transition: 0.3s all ease-in-out;
+}
+.header .nav .menu a:hover:after{
+    width: 100%;
+}
+.header .nav .menu a:hover{
+    color: var(--meduim);
+}
+.header .nav .menu li:hover{
+    color: var(--primary) ;
+}
+.header .nav .free-trial{
+    font-size: calc(var(--pixel) * 18);
+    font-weight: 700;
+    color: var(--primary);
+    padding: calc(var(--pixel) * 10) calc(var(--pixel) * 25);
+    border: 1px solid var(--primary);
+    border-radius: calc(var(--pixel) * 50);
+    margin-left: calc(var(--pixel) * 20);
+    transition: var(--transition);
+}
+.header .nav .free-trial:hover{
+    color: #fff;
+}
+.header .nav .shop-card{
+    font-size: calc(var(--pixel) * 23);
+    position: relative;
+    color: var(--gray);
+}
+.header .nav .shop-card::after{
+    content: '0';
+    position: absolute;
+    top: calc(var(--pixel) * -10);
+    right: calc(var(--pixel) * -10);
+    background-color: var(--primary);
+    color: #fff;
+    font-size: calc(var(--pixel) * 10);
+    padding: calc(var(--pixel) * 5);
+    border-radius: 50%;
+}
