@@ -195,3 +195,71 @@ button{
     padding: calc(var(--pixel) * 5);
     border-radius: 50%;
 }
+/*=========== banner ==============*/
+.banner {
+    position: relative;
+}
+.banner .arrow > i {
+    font-size: calc(var(--pixel) * 25);
+    top: 50%;
+    position: absolute;
+    background-color: var(--primary);
+    color: #fff;
+    padding: calc(var(--pixel) * 15) calc(var(--pixel) * 16);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.banner .arrow > i:hover {
+    background-color: var(--light-gray);
+    color: var(--secondary);
+}
+.banner .arrow .fa-arrow-right {
+    right: calc(var(--pixel) * 15);
+}
+.banner .arrow .fa-arrow-left {
+    left: calc(var(--pixel) * 15);
+}
+.banner .banner-slider .slider .img{
+    width: 100%;
+}
+.banner .banner-slider .slider .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00000050;
+    z-index: 1 ;
+}
+.banner .banner-slider .slider {
+    position: relative;
+}
+.banner .banner-slider .slider .text{
+    position: absolute;
+    top: 50%;
+    left: calc(var(--pixel) * 150);
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.banner .banner-slider .slider .title{
+    color: #fff;
+    font-size: calc(var(--pixel) * 60);
+    font-weight: 700;
+    line-height: calc(var(--pixel) * 80);
+    margin-bottom: calc(var(--pixel) * 40);
+}
+.banner .banner-slider .slider .title span{
+    color: var(--primary);
+}
+.banner .banner-slider .slider .btn{
+    padding: calc(var(--pixel) * 15) calc(var(--pixel) * 20);
+    font-size: calc(var(--pixel) * 22);
+    font-weight: 700;
+    border-radius: calc(var(--pixel) * 15);
+    margin-right: calc(var(--pixel) * 20);
+    color: var(--primary);
+}
+.banner .banner-slider .slider .btn:hover{
+    color: #fff;
+}
