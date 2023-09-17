@@ -263,3 +263,45 @@ button{
 .banner .banner-slider .slider .btn:hover{
     color: #fff;
 }
+/*=========== why-us ==============*/
+.why-us {
+    padding: calc(var(--pixel) * 60) 0;
+}
+.why-us .section-title{
+    margin-bottom: calc(var(--pixel) * 40);
+    color: var(--secondary);
+    font-size: calc(var(--pixel) * 50);
+    line-height: calc(var(--pixel) * 70);
+    font-weight: 700;
+}
+.why-us .list li{
+    width: 100%;
+    padding: calc(var(--pixel) * 40) 0;
+    background-color: #f3f6f4;
+    text-align: center;
+    border-radius: calc(var(--pixel) * 10);
+    transition: .5s all ease;
+}
+.why-us .list li:hover{
+    background-color: var(--primary);
+    scale: 1.05;
+}
+.why-us .list li:hover i,
+.why-us .list li:hover .title{
+    color: #fff;
+}
+.why-us .list .icon {
+    margin-bottom: calc(var(--pixel) * 20);
+}
+.why-us .list .icon i{
+    font-size: calc(var(--pixel) * 65);
+    color: var(--primary);
+    transition: .5s all ease;
+}
+.why-us .list .title{
+    font-size: calc(var(--pixel) * 20);
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--gray);
+    transition: .5s all ease;
+}
